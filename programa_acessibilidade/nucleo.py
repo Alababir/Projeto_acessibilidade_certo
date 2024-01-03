@@ -4,18 +4,18 @@ from multiprocessing import process
 import time
 
 
-def funcao_1():
+def coisa_1():
     while True:
         subprocess.run(["python", "principal.py"])
 
 
-def funcao_2():
+def coisa_2():
     while True:
         subprocess.run(["python", "canva.py"])
 
 
-thread_1 = threading.Thread(target=funcao_1)
-thread_2 = threading.Thread(target=funcao_2)
+thread_1 = threading.Thread(target=coisa_1)
+thread_2 = threading.Thread(target=coisa_2)
 
 
 thread_1.start()
